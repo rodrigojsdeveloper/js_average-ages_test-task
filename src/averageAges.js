@@ -24,7 +24,7 @@ function calculateMenAverageAge(people, century) {
 
   men.forEach((m) => sum += m.died - m.born);
 
-  return sum/    men.length;
+  return sum / men.length;
 }
 
 /**
@@ -78,7 +78,7 @@ function calculateAverageAgeDiff(people, onlyWithSon) {
   let sum = 0;
 
   children.forEach((ch) => sum += ch.born - people.find(
-    (m) => m.name === ch.mother
+    (m) => m.name === ch.mother,
   ).born);
 
   return sum / children.length;
