@@ -24,7 +24,7 @@ function calculateMenAverageAge(people, century) {
 
   men.forEach((m) => sum += m.died - m.born);
 
-  return sum/men.length;
+  return sum/    men.length;
 }
 
 /**
